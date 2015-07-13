@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Raleway' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/ico" href="melon-favicon.ico"/>
+    <title>Ubermelon Order Form</title>
+    <style>
+        html {
+            background-color: #fff;
+        }
+        h1 {
+            font-family:'Lobster Two', cursive;
+            font-size: 60px;
+            color: #FF584D;
+            margin-bottom: 10px;
+            margin-top: -10px
+        }
+        h2 {
+            font-family:'Lobster Two', cursive;
+            color: #6D8925;
+            margin: 30px;
+        }
+        p {
+            font-family: 'Raleway', sans-serif;
+        }
+        a {
+            font-family: 'Raleway', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 30px;
+        }
+        .nav { 
+            background-color:#6D8925;
+            color: white;
+            font-size: 30px;
+            height: 45px;
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border:0;
+        }
+        .nav-links { 
+            color: white;
+            float: right;  
+        }
+        #banner {
+            margin-top: 50px;
+
+        }
+        #logo {
+            font-family:'Lobster Two', cursive;
+            color: white;
+        }
+        form {
+            font-family: 'Raleway', sans-serif;  
+        }
+        table {
+            font-family: 'Raleway', sans-serif;
+        }
+        .page-body {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .nav-link a:link {
+        color: #FFF;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #C7FF4D;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #FF958D;
+        }
+
+        /* selected link */
+        a:active {
+            color: #FFF;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="ubermelon-homepage.html" id="logo">Ubermelon</a>
+        <span class="nav-links">
+        <a href="ubermelon-orderpage.html" >Order</a>   
+        <a href="#nutrition" >Nutrition</a>
+    </span>
+    </div>
+    <div class="page-body">
+        <center>
+            <a href="ubermelon-homepage.html"><img src="kawaii_cute_melon_slices.png" alt="cartoon melon slices" width="1000" id="banner"></a>
+        </center>
+        <center>
+            <h1>Order!</h1>
+        </center>
+        <div class="orderbody">
+        <table>
+            <thead>
+                <tr>
+                    <th>Melon Name</th>
+                    <th>Price per lb</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Watermelon</td>
+                    <td>$1.59</td>
+                </tr>
+                <tr>
+                    <td>Honeydew</td>
+                    <td>$0.99</td>
+                </tr>
+                <tr>
+                    <td>Canteloupe</td>
+                    <td>$1.29</td>
+                </tr>
+                <tr>
+                    <td>Crenshaw</td>
+                    <td>$2.19</td>
+                </tr>
+                <tr>
+                    <td>Canary</td>
+                    <td>$11.99</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <p>Place your orders here! You know you want to.</p>
+        <form action="https://ubermelon-order-form.herokuapp.com/process" id="orderform" method="GET">
+            <label for="field-firstname">First Name:
+                <input type="text" name="firstname" id="field-firstname" required="true"><span id="star">*</span>
+            </label>
+            <br><br>
+            <label for="field-lastname">Last Name:
+                <input type="text" name="lastname" id="field-lastname">
+            </label>
+            <br><br>
+            <label for="field-melontype">Melon type:
+                <select name="melontype" id="field-melontype" required="true">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="honeydew">Honeydew</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="Crenshaw">Crenshaw</option>
+                    <option value="Canary">Canary</option>
+                </select>
+            </label><span id="star">*</span>
+            <br><br>
+            <label for="field-quantity">Quantity*:
+                <input type="text" name="quantity" id="field-quantity" required="true">
+            </label><span id="star">*</span>
+            <br><br>
+            <label for="field-deliverytime">Delivery Time:
+                <input type="radio" name="time" id="field-deliverytime" value=
+                "am">12:00am-12:00pm
+                <input type="radio" name="time" id="field-deliverytime" value="pm">12:00pm-12:00am
+                <input type="radio" name="time" id="field-deliverytime" value="wat">Time is an illusion
+            </label>
+            <br><br>
+            <label for="field-returningcustomer">Returning customer?
+                <input type="radio" name="time" id="field-returningcustomer" value="yes">Yes
+                <input type="radio" name="time" id="field-returningcustomer" value="no">No
+            </label>
+            <br><br>
+            <label for="field-statistics">For statistical purposes:
+                <input type="checkbox" name="stats" id="field-statistics" value="Dog">Dog
+                <input type="checkbox" name="stats" id="field-statistics" value="Cat">Cat
+                <input type="checkbox" name="stats" id="field-statistics" value="Hedgehog">Hedgehog
+                <input type="checkbox" name="stats" id="field-statistics" value="Balloonicorn">Balloonicorn
+                <input type="checkbox" name="stats" id="field-statistics" value="Yak">Yak
+            </label>
+            <br><br>
+            <textarea rows="4" cols="60" name="deliveryinstr" form="orderform">Enter delivery instructions here...</textarea>
+            <br><br>
+            <input type="submit">
+
+        </form>
+        <br>
+        <footer>*Quantities given are by the flat</footer>
+    </div>
+</div>
+</body>
+</html>
