@@ -4,7 +4,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Raleway' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/ico" href="melon-favicon.ico"/>
     <title>Ubermelon</title>
-    <style>
+<style>
         html {
             background-color: #fff;
         }
@@ -22,7 +22,6 @@
         }
         p {
             font-family: 'Raleway', sans-serif;
-            margin: 30px;
         }
         a {
             font-family: 'Raleway', sans-serif;
@@ -32,7 +31,7 @@
         }
         .nav { 
             background-color:#6D8925;
-            color: #fff;
+            color: white;
             font-size: 30px;
             height: 45px;
             position: fixed;
@@ -47,8 +46,9 @@
             outline: none;
             border:0;
         }
-        .second { 
-            color: white;   
+        .nav-links { 
+            color: white;
+            float: right;  
         }
         #banner {
             margin-top: 50px;
@@ -59,47 +59,95 @@
             color: white;
             margin-left: 20px;
         }
+        form {
+            font-family: 'Raleway', sans-serif;  
+        }
+        table {
+            font-family: 'Raleway', sans-serif;
+        }
+        .page-body {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
 
+        .nav-link a:link {
+            color: #FFF;
+        }
 
+        /*nav-links styling*/
+        .nav-links a:link {
+            color: #FFF;
+        }
+
+        .nav-links a:visited {
+            color: #C7FF4D;
+        }
+
+        .nav-links a:hover {
+            color: #FF958D;
+        }
+
+        .nav-links a:active {
+            color: #FFF;
+        }
+
+        /*page-body styling*/
+       /* .page-body a:link {
+            color: #FFF;
+        }
+
+        .page-body a:visited {
+            color: #C7FF4D;
+        }
+
+        .page-body a:hover {
+            color: #FF958D;
+        }
+
+        .page-body a:active {
+            color: #FFF;
+        }*/
     
     </style>
 </head>
 <body>
     <div class="nav">
         <a href="ubermelon-homepage.html" id="logo">Ubermelon</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="ubermelon-orderpage.html" class="second">Order</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#nutrition" class="second">Nutrition</a>
+        <span class="nav-links">
+            <a href="ubermelon-orderpage.html" >Order</a>   
+            <a href="#nutrition" >Nutrition</a>
+        </span>
     </div>
-    <center>
-         <a href="ubermelon-homepage.html"><img src="kawaii_cute_melon_slices.png" alt="cartoon melon slices" width="1000" id="banner"></a>
-    </center>
-    <center>
-        <h1>Ubermelon</h1>
-    </center>
-    <p>A melon is any of various plants of the family Cucurbitaceae with edible, fleshy fruit.
+    <div class="page-body">
+        <center>
+             <a href="ubermelon-homepage.html"><img src="kawaii_cute_melon_slices.png" alt="cartoon melon slices" width="1000" id="banner"></a>
+        </center>
+        <center>
+            <h1>Ubermelon</h1>
+        </center>
+        <p>A melon is any of various plants of the family Cucurbitaceae with edible, fleshy fruit.
 
-        The word "melon" can refer to either the plant or specifically to the fruit. Many different cultivars have been produced, particularly of muskmelons.
+            The word "melon" can refer to either the plant or specifically to the fruit. Many different cultivars have been produced, particularly of muskmelons.
 
-        Although the melon is a botanical fruit (specifically, a berry), some varieties may be considered vegetables rather than fruits. The word melon derives from Latin melopepo, which is the latinization of Greek, meaning "melon"
-    </p>
-        <a href="https://en.wikipedia.org/wiki/Melon">- Wikipedia</a>
-    
-        <h2 id="nutrition">Nutrition Information</h2>
-        <p><b>Serving Size:</b> 1 melon</p>
-        <p><b>Calories:</b> 186</p>
-        <p><i>*Percent Daily Values are based on a 2,000 calorie diet.
-            <br>Your daily values may be higher or lower depending on your calorie needs.</i>
+            Although the melon is a botanical fruit (specifically, a berry), some varieties may be considered vegetables rather than fruits. The word melon derives from Latin melopepo, which is the latinization of Greek, meaning "melon"
         </p>
-        <center><img src="watermelon-slice.png" height="300" alt="watermelon slice" ></center>
-        <div id="linkto">
-        <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Cantaloupe" target="_blank">Cantaloupe</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Watermelon" target="_blank">Watermelon</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Casaba" target="_blank">Casaba</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Honeydew" target="_blank">Honeydew</a></li>
-        </ul>
+            <a href="https://en.wikipedia.org/wiki/Melon">- Wikipedia</a>
+        
+            <h2 id="nutrition">Nutrition Information</h2>
+            <p><b>Serving Size:</b> 1 melon</p>
+            <p><b>Calories:</b> 186</p>
+            <p><i>*Percent Daily Values are based on a 2,000 calorie diet.
+                <br>Your daily values may be higher or lower depending on your calorie needs.</i>
+            </p>
+            <center><img src="watermelon-slice.png" height="300" alt="watermelon slice" ></center>
+            <div id="linkto">
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Cantaloupe" target="_blank">Cantaloupe</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Watermelon" target="_blank">Watermelon</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Casaba" target="_blank">Casaba</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Honeydew" target="_blank">Honeydew</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
