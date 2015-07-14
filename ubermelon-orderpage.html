@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Raleway' rel='stylesheet' type='text/css'>
-    <link href="style.css" rel='stylesheet' type='text/css'>
+    <link href="style.css" rel='stylesheet'>
     <link rel="icon" type="image/ico" href="melon-favicon.ico"/>
     <title>Ubermelon Order Form</title>
 </head>
@@ -55,16 +55,18 @@
         </table>
         <p>Place your orders here! You know you want to.</p>
         <form action="https://ubermelon-order-form.herokuapp.com/process" id="orderform" method="GET">
-            <label for="field-firstname">First Name:
-                <input type="text" name="firstname" id="field-firstname" required="true"><span id="star">*</span>
+            
+            <label>First Name:
+                <input type="text" name="firstname" required><span id="star">*</span>
             </label>
+
             <br><br>
-            <label for="field-lastname">Last Name:
-                <input type="text" name="lastname" id="field-lastname">
+            <label>Last Name:
+                <input type="text" name="lastname">
             </label>
             <br><br>
             <label for="field-melontype">Melon type:
-                <select name="melontype" id="field-melontype" required="true">
+                <select name="melontype" id="field-melontype" required>
                     <option value="watermelon">Watermelon</option>
                     <option value="honeydew">Honeydew</option>
                     <option value="canteloupe">Canteloupe</option>
@@ -74,7 +76,7 @@
             </label><span id="star">*</span>
             <br><br>
             <label for="field-quantity">Quantity*:
-                <input type="text" name="quantity" id="field-quantity" required="true">
+                <input type="text" name="quantity" id="field-quantity" required>
             </label><span id="star">*</span>
             <br><br>
             <label for="field-deliverytime">Delivery Time:
@@ -89,13 +91,24 @@
                 <input type="radio" name="time" id="field-returningcustomer" value="no">No
             </label>
             <br><br>
-            <label for="field-statistics">For statistical purposes:
-                <input type="checkbox" name="stats" id="field-statistics" value="Dog">Dog
-                <input type="checkbox" name="stats" id="field-statistics" value="Cat">Cat
-                <input type="checkbox" name="stats" id="field-statistics" value="Hedgehog">Hedgehog
-                <input type="checkbox" name="stats" id="field-statistics" value="Balloonicorn">Balloonicorn
-                <input type="checkbox" name="stats" id="field-statistics" value="Yak">Yak
-            </label>
+
+
+            Are you human?
+            <label><input type="radio" name="human" value="yes">Yes</label>
+            <label><input type="radio" name="human" value="no">No</label>
+
+
+            <br><br>
+            For statistical purposes:
+                <label><input type="checkbox" name="stats" value="Dog">Dog</label>
+                <label><input type="checkbox" name="stats" value="Cat">Cat</label>
+                <label><input type="checkbox" name="stats" value="Hedgehog">Hedgehog</label>
+                <label><input type="checkbox" name="stats" value="Balloonicorn">Balloonicorn</label>
+                <label><input type="checkbox" name="stats" value="Yak">Yak</label>
+            
+            
+
+
             <br><br>
             <textarea rows="4" cols="60" name="deliveryinstr" form="orderform">Enter delivery instructions here...</textarea>
             <br><br>
