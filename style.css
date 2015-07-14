@@ -11,7 +11,6 @@ h1 {
 h2 {
     font-family:'Lobster Two', cursive;
     color: #6D8925;
-    margin: 30px;
 }
 p {
     font-family: 'Raleway', sans-serif;
@@ -60,15 +59,26 @@ body, html {
 
 #star {
     color: red;
-
 }
 
 form {
     font-family: 'Raleway', sans-serif;  
 }
 
+#linkto ul li {
+    font-family:'Lobster Two', cursive;
+}
+
 table {
     font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.nutrition_c {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+#nutrition {
+    text-align: center;
     font-size: 30px;
 }
 
@@ -77,10 +87,14 @@ table {
     margin-right: 30px;
 }
 
+footer {
+    font-family: 'Raleway';
+}
+
 .nav-links a:link {
     color: #FFF;
 }
-
+.order
 /*nav-links styling*/
 .nav-links a:link {
     color: #FFF;
@@ -98,6 +112,11 @@ table {
     color: #FFF;
 }
 
+.orderbody table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*@media styling*/
 @media screen and (max-width: 500px) {
     .nav-links { 
@@ -106,7 +125,7 @@ table {
         font-size:20px;
         margin-top:10px;
     }
-    .nutrition {
+    .nutrition_c {
         margin-left: 5%;
         margin-right: 5%;
     }
